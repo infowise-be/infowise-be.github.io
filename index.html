@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infowise</title>
+  <meta name="description" content="Infowise SRL">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Infowise">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://infowise.be/">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: 24px 16px;
+      background: #ffffff;
+      color: #081e3c;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; }
+    main img { display: block; width: min(320px, 70vw); height: auto; }
+    footer { font-size: 13px; color: #5b6b82; text-align: center; }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="logo.svg" alt="Infowise" width="562" height="731">
+  </main>
+  <footer>
+    &copy; <span id="year">2026</span> Infowise SRL
+    <!-- Belgian law asks company websites to show the registered office and enterprise (BCE/KBO) number, e.g.:
+    &middot; Rue Exemple 1, 1000 Bruxelles &middot; BE 0123.456.789 -->
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
